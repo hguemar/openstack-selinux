@@ -8,3 +8,4 @@ gen_require(`
 
 # Bugzilla 1325623
 allow httpd_t cinder_log_t:file open;
+allow httpd_t cinder_log_t:dir { add_name write };
